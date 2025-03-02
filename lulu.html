@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <title>My Cute Crypto World</title>
+  <!-- Ensures proper rendering on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     /* Basic reset */
     html, body {
@@ -16,27 +18,33 @@
                   no-repeat center center;
       background-size: cover;
       font-family: "Comic Sans MS", "Chalkboard SE", cursive, sans-serif;
-      /* Darker text color */
-      color: #000;
+      color: #000; /* Darker text color */
       text-align: center;
-      /* Add a subtle text shadow to make it pop */
+      /* Add a subtle text shadow to make it pop on light areas */
       text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
     }
 
-    /* A little spacing at the top for the logo */
+    /* Make images shrink nicely on smaller screens */
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto; /* center the image */
+    }
+
     .logo {
       margin-top: 50px;
     }
 
     /* Main heading style */
     h1 {
-      margin: 40px 20px 10px; /* slightly reduced bottom margin to make room for the next text */
+      margin: 40px 20px 10px;
       font-size: 2em;
     }
 
     /* Description text under heading */
     .description {
-      font-size: 1em; /* smaller text */
+      font-size: 1em;
       margin: 10px 20px;
     }
 
@@ -45,11 +53,10 @@
       margin-top: 30px;
     }
 
-    /* Style for the links */
+    /* Style for all links */
     a {
       display: inline-block;
       text-decoration: none;
-      /* Dark text on a light semi-transparent background */
       color: #000;
       background-color: rgba(255, 255, 255, 0.6);
       padding: 10px 20px;
@@ -58,7 +65,6 @@
       font-size: 1.2em;
       transition: background-color 0.3s ease-in-out;
     }
-
     a:hover {
       background-color: rgba(255, 255, 255, 0.9);
     }
@@ -69,21 +75,22 @@
   <img 
     class="logo" 
     src="logo.webp" 
-    alt="Crypto Logo" 
-    width="200"
+    alt="Crypto Logo"
   />
 
   <!-- Headline with plenty of emojis -->
-  <h1>🥰🌸🦄💎🚀 Welcome to my cute world of cryptocurrency! 🥰🌸🦄💎🚀</h1>
+  <h1>🥰🌸💎🚀 Welcome to my cute world of cryptocurrency! 🥰🌸💎🚀</h1>
 
   <!-- Smaller description with innocent emojis and hearts -->
-  <p class="description">🥺💕 LULU is an ERC20 fan token that gives you extra special perks. 🥺💕</p>
+  <p class="description">💕 LULU is an ERC20 fan token that gives you extra special perks. 💕</p>
 
   <!-- Links -->
   <div class="links">
-    <a href="https://t.me/YOUR_TELEGRAM_HANDLE">Join Me on Telegram</a>
-    <a href="whitepaper.pdf">Read the White Paper</a>
-    <a href="https://etherscan.io/token/YOUR_TOKEN_ADDRESS_HERE">View LULU on the Blockchain</a>
+    <!-- New Uniswap link with money emojis -->
+    <a href="https://app.uniswap.org/#/swap?inputCurrency=YOUR_TOKEN_ADDRESS_HERE">💸🦄 Trading on Uniswap 🦄💸</a>
+    <a href="https://etherscan.io/token/YOUR_TOKEN_ADDRESS_HERE">🎈 View LULU on the Blockchain 🎈</a>
+    <a href="whitepaper.pdf">🧠🔬 Read the White Paper 🧠🔬</a>
+
   </div>
 </body>
 </html>
